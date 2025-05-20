@@ -1,0 +1,30 @@
+// test
+@import 'reset';
+
+body{
+  font-family: "Audiowide", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; // bezpieczny odstęp na mobile
+  width: 100%;
+}
+
+.header-content {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  background-image: url('./assets/pexels-rdne-7895394.jpg');
+  width: 100vw;
+  height: calc(100vh - 90px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+// możesz dodać dowolną logikę JS tutaj
