@@ -1,0 +1,36 @@
+// main = article - > do poprawwy struktura
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .article {
+    max-width: 340px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    counter-increment: num;
+    text-align: left;
+  
+    box-shadow: 8px 10px 19px -15px rgba(66, 68, 90, 1);
+  }
+  .main-subtitle {
+    margin-bottom: 10px;
+  }
+  
+  .article::before {
+    content: counter(num);
+    position: relative;
+    font-size: 50px;
+    left: 30px;
+  }
+  
+  .main-title {
+    margin-bottom: 10px;
+  }
+  
+  
+  

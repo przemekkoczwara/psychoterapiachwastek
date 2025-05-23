@@ -1,0 +1,13 @@
+body {
+  font-family: 'Audiowide', sans-serif;
+  font-family: 'Italiana', sans-serif;
+  color: #2f2f2e;
+  counter-reset: num;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; // bezpieczny odstęp na mobile
+  width: 100%;
+}

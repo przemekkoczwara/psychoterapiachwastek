@@ -1,0 +1,29 @@
+// hero
+
+.hero {
+    background-image: url('/src/assets/background.jpg');
+    width: 100vw;
+    height: calc(100vh - 70px - 70px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 10px 19px -15px rgba(66, 68, 90, 1);
+  }
+  .hero-title {
+    font-size: 40px;
+    color: rgb(15, 84, 127);
+    letter-spacing: 5px;
+    margin-bottom: 100px;
+  }
+  
+  .icon-hero {
+    position: absolute;
+    bottom: 100px;
+    font-size: 80px;
+    color: #90d135;
+  }
+  
+  

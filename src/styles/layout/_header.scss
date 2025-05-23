@@ -1,0 +1,50 @@
+header {
+  .header-content {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo-slogan {
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  .icon-logo {
+    font-size: 34px;
+    padding-left: 20px;
+  }
+  .menu {
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    li {
+      list-style-type: none;
+      padding: 10px 20px;
+
+      a {
+        text-decoration: none;
+        color: rgb(137, 126, 126);
+        // color: black;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #005f90;
+        }
+      }
+    }
+
+    li:last-child {
+      border-radius: 20px;
+      border: 1px solid #005f90;
+
+      &:hover {
+        background-color: #005f90;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
