@@ -17,7 +17,7 @@
   font-size: 40px;
   color: rgb(15, 84, 127);
   letter-spacing: 5px;
-  // margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 .btn-hero {
   position: absolute;
@@ -26,10 +26,10 @@
   border: none;
   opacity: 0.7;
   color: white;
-  background-color: rgb(9, 56, 85);
+  background-color: #005f90;
 
   &:hover {
-    background-color: rgb(15, 84, 127);
+    background-color: #024c71;
   }
 }
 

@@ -2,12 +2,15 @@
 
 footer {
     background-color: #f2f2f1;
+    border-top  : 2px solid rgb(208, 178, 178);
+    
   }
   .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
+
   }
   // .footer-text .material-symbols-outlined {
   //   vertical-align: middle;

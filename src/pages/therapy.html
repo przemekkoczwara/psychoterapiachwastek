@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psychoterapia Chwastek</title>
+    <link rel="stylesheet" href="./src/styles/main.scss" />
     <!-- Czcionki -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +20,7 @@
   </head>
   <body>
     <!-- new section -->
-    <header>
+    <header class="no-border-header">
       <div class="header-content container">
         <h1 class="logo-slogan">
           <a class="logo-link" href="index.html">Aleksandra Chwastek</a>
@@ -28,8 +29,8 @@
         <nav>
           <ul class="menu">
             <li><a href="/src/pages/therapy.html">Proces terapii</a></li>
-            <li><a href="./pages/about.html">O mnie</a></li>
-            <li><a href="/pages/contact.html">Kontakt</a></li>
+            <li><a href="/src/pages/about.html">O mnie</a></li>
+            <li><a href="/src/pages/contact.html">Kontakt</a></li>
             <li>
               <a
                 href="https://www.znanylekarz.pl/aleksandra-chwastek/psycholog-psychoterapeuta/krakow"
@@ -41,13 +42,9 @@
         </nav>
       </div>
     </header>
-    <section id="therapy" class="therapy container">
+    <section id="therapy" class="therapy">
       <div class="article">
         <h2 class="article-title">Jak wyglada psychoterapia?</h2>
-        <p class="article-subtitle">
-          To regularne spotkania, zwykle raz lub dwa razy w tygodniu. Trwaja 50
-          minut.
-        </p>
         <p class="article-text">
           Psychoterapia to forma rozmowy, w ktorej opowiadasz o sobie, o tym co
           uwazasz za istotne i o tym co Cie porusza. Moja rola nie jest
@@ -75,6 +72,10 @@
       </div>
       <div class="article">
         <h2 class="article-title">Kiedy terapia jest skuteczna?</h2>
+        <p class="article-subtitle">
+          To regularne spotkania, zwykle raz lub dwa razy w tygodniu. Trwaja 50
+          minut.
+        </p>
         <p class="article-text">
           Aby zmienic wzorce, ktore powstawaly przez lata potrzeba stalek i
           powtarzalnej pracy. Wymaga to regularnych spotkan, co tydzien lub
