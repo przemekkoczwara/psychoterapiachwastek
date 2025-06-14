@@ -1,6 +1,11 @@
+:root {
+  --main-font: 'Poiret One', sans-serif;
+  // --secondary-font: 'Italiana', sans-serif;
+  --main-color: whitesmoke;
+}
+
 body {
-  font-family: 'Audiowide', sans-serif;
-  font-family: 'Italiana', sans-serif;
+  font-family: var(--main-font);
   color: #2f2f2e;
   counter-reset: num;
 }

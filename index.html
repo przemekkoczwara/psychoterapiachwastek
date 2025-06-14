@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psychoterapia Chwastek</title>
     <link rel="stylesheet" href="./src/styles/main.scss" />
-    <!-- Czcionki -->
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap"
       rel="stylesheet"
     />
-
     <!-- Ikony Material Symbols -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- new section -->
+  <body class="home">
+    <!-- s:header-->
     <header>
-      <div class="header-content container">
-        <h1 class="logo-slogan">
+      <div class="header-hero container">
+        <h2 class="logo-slogan">
           <a class="logo-link" href="index.html">Aleksandra Chwastek</a>
           <span class="material-symbols-outlined icon-logo"> gesture </span>
-        </h1>
+        </h2>
         <nav>
           <ul class="menu">
             <li><a href="/src/pages/therapy.html">Proces terapii</a></li>
@@ -35,35 +35,28 @@
               <a
                 href="https://www.znanylekarz.pl/aleksandra-chwastek/psycholog-psychoterapeuta/krakow"
                 target="_blank"
-                >Umów wizyte</a
+                rel="noopener noreferrer"
+                >Umów wizytę</a
               >
             </li>
           </ul>
         </nav>
       </div>
+      <div class="header-content">
+        <h1 class="hero-title">Zrozum uczucia</h1>
+      </div>
     </header>
-    <!-- new section -->
-    <section class="hero">
-      <h2 class="hero-title">
-        Tu zaczyna sie Twoja wewnetrzna <strong>zmiana</strong>
-      </h2>
-      <a href="/src/pages/therapy.html" class="btn btn-hero"
-        >Dowiedz sie wiecej</a
-      >
-    </section>
-    <!-- new section -->
+    <!-- e:header-->
+    <!-- s:footer -->
     <footer>
       <div class="footer-content container">
-        <small class="footer-text">
-          <span class="material-symbols-outlined" aria-hidden="true"
-            >copyright</span
-          >
-          <span>2025</span>
-          Psychoterapia Aleksandra Chwastek. Wszystkie prawa zastrzezone.
-          Created by SnailCode
+        <small class="footer-text" aria-label="Copyright 2025">
+          &copy; 2025 Psychoterapia Aleksandra Chwastek. Wszystkie prawa
+          zastrzeżone. Created by SuperP
         </small>
       </div>
     </footer>
+    <!-- e:footer -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

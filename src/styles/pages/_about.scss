@@ -1,5 +1,6 @@
 .about {
-  background-color: rgb(124, 137, 130);
+  // background-color: rgb(124, 137, 130);
+  background-color: #fff;
 }
 .about-container {
   height: calc(100vh - 70px - 70px);
@@ -8,7 +9,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f2f2f1;
-  background-color: rgb(124, 137, 130);
+  // background-color: rgb(124, 137, 130);
+  background-color: #fff;
   border-radius: 45px;
 }
 .about-details {
@@ -16,7 +18,7 @@
   padding: 100px;
   height: 450px;
   border-radius: 0px 30px 30px 0px;
-  box-shadow: 8px 8px 58px 0px rgba(66, 68, 90, 1);
+  // box-shadow: 8px 8px 58px 0px rgba(66, 68, 90, 1);
 }
 
 .about-title {
@@ -33,5 +35,5 @@ img {
   width: auto;
   height: 450px;
   border-radius: 16px 0 0 16px;
-  box-shadow: 8px 8px 58px 0px rgba(66, 68, 90, 1);
+  // box-shadow: 8px 8px 58px 0px rgba(66, 68, 90, 1);
 }
