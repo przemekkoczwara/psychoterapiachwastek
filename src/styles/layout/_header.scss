@@ -4,9 +4,11 @@ body.home header {
   background-repeat: no-repeat;
   background-position: bottom;
   color: var(--main-color);
-}
-header {
   height: calc(100vh - 70px);
+}
+body:not(.home) header {
+  background-image: none;
+  height: 70px !important;
 }
 
 .header-hero {
@@ -50,19 +52,18 @@ header {
       }
     }
   }
+}
+body.home .menu li:last-child {
+  border-radius: 20px;
+  background-color: whitesmoke;
+  font-family: var(--main-font);
 
-  li:last-child {
-    border-radius: 20px;
-    background-color: whitesmoke;
-    font-family: var(--main-font);
+  a {
+    color: rgb(21, 20, 20);
+  }
 
-    a {
-      color: rgb(21, 20, 20);
-    }
-
-    &:hover {
-      opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
   }
 }
 .header-color {

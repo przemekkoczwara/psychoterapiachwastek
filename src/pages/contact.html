@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Italiana&family=Poiret+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap"
       rel="stylesheet"
     />
     <!-- Ikony Material Symbols -->
@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="body">
+  <body class="allsection">
     <!-- s:header-->
     <header>
       <div class="header-hero container">
@@ -31,10 +31,11 @@
             <li><a href="/src/pages/therapy.html">Proces terapii</a></li>
             <li><a href="/src/pages/about.html">O mnie</a></li>
             <li><a href="/src/pages/contact.html">Kontakt</a></li>
-            <li>
+            <li class="btn-bg-color">
               <a
                 href="https://www.znanylekarz.pl/aleksandra-chwastek/psycholog-psychoterapeuta/krakow"
                 target="_blank"
+                rel="noopener noreferrer"
                 >Umów wizytę</a
               >
             </li>
@@ -43,35 +44,37 @@
       </div>
     </header>
     <!-- e:header-->
-     <!-- s:contact -->
+    <!-- s:contact -->
     <section id="contact" class="contact-section container">
       <div class="contact-details">
-        <h2 class="contact-title">
+        <h3 class="contact-title">
           Kontakt <span class="material-symbols-outlined"> call </span>
           <span class="material-symbols-outlined"> mark_email_unread </span>
-        </h2>
+        </h3>
         <p class="contact-text">
-          ZADZWON:
+          Zadzwoń:
           <a href="tel:+48 791 950 324">+48 791 950 324</a>
         </p>
         <p class="contact-text">
-          NAPISZ:<a href="mailto:psychoterapia.chwastek@gmail.com"
+          Napisz:<a href="mailto:psychoterapia.chwastek@gmail.com"
             >psychoterapia.chwastek@gmail.com</a
           >
         </p>
-        <h2 class="contact-title">
+        <h3 class="contact-title">
           Lokalizacja<span class="material-symbols-outlined">
             location_on
           </span>
-        </h2>
-        <p class="contact-text">
-          SPOTKAJMY SIE: ulica Jerozolimska 2a/45, Kraków
-        </p>
+        </h3>
+        <p class="contact-text">Spotkajmy się: Jerozolimska 2a/45, Kraków</p>
+        <h3 class="contact-title">
+          Cennik <span class="material-symbols-outlined"> payments </span>
+        </h3>
+        <p class="contact-text">Koszt sesji: 200 zł / 50 min</p>
       </div>
-
       <div class="location-map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41003.426268178526!2d19.925401464127987!3d50.0354520382971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b53513c0221%3A0xc47c135d10c223b4!2sJerozolimska%202a%2F45%2C%2030-555%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1747819551035!5m2!1spl!2spl"
+          title="Mapa lokalicacji psychoterapi"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20501.71416784887!2d19.94600103170262!3d50.035449617157774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b53513c0221%3A0xc47c135d10c223b4!2sJerozolimska%202a%2F45%2C%2030-555%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1749932849138!5m2!1spl!2spl"
           width="600"
           height="450"
           style="
@@ -79,7 +82,7 @@
             border-radius: 5px 30px 30px 5px;
             box-shadow: 8px 8px 58px 0px rgba(66, 68, 90, 1);
           "
-          allowfullscreen=""
+          allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
@@ -87,10 +90,11 @@
     </section>
     <!-- e:contact -->
     <!-- s:footer -->
-    <footer>
+    <footer class="no-border">
       <div class="footer-content container">
         <small class="footer-text" aria-label="Copyright 2025">
-          &copy; 2025 Psychoterapia Aleksandra Chwastek. Wszystkie prawa zastrzeżone. Created by SuperP
+          &copy; 2025 Psychoterapia Aleksandra Chwastek. Wszystkie prawa
+          zastrzeżone. Created by SuperP
         </small>
       </div>
     </footer>
