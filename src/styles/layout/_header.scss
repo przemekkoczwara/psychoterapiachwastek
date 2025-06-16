@@ -1,19 +1,22 @@
+@use '../variables' as vars;
+
 body.home header {
   background-image: url('/src/assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  color: var(--main-color);
+  // color: vars.$color-dark;
   height: calc(100vh - 70px);
 }
 body:not(.home) header {
   background-image: none;
   height: 70px !important;
+  // color: black;
 }
 
 .header-hero {
   // height: 70px;
-  padding-top: 30px;
+  padding-top: 1.875rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,59 +24,60 @@ body:not(.home) header {
 }
 
 .logo-slogan {
-  font-size: 32px;
-  font-weight: 200;
+  font-size: vars.$font-size-logo;
+  font-weight: vars.$font-extra-light;
   letter-spacing: 5px;
-  font-family: 'Lato', sans-serif;
+  font-family: vars.$font-logo-footer;
 }
+.logo-link {
+  color: vars.$color-white;
+}
+
 .icon-logo {
-  font-size: 44px;
-  padding-left: 20px;
+  font-size: 2.75rem;
+  padding-left: 1.25rem;
   vertical-align: middle;
+  color: vars.$color-white;
 }
 .menu {
   display: flex;
-  font-size: 16px;
+  font-size: vars.$font-size-text;
   letter-spacing: 2px;
   text-transform: uppercase;
 
   li {
     list-style-type: none;
-    padding: 10px 20px;
+    padding: vars.$padding-standard;
 
     a {
       text-decoration: none;
-      // color: rgb(146, 133, 133);
-      // color: black;
+      color: vars.$color-white;
       transition: color 0.3s ease;
 
       &:hover {
-        color: black;
+        color: vars.$color-dark;
       }
     }
   }
 }
 body.home .menu li:last-child {
-  border-radius: 20px;
-  background-color: whitesmoke;
+  border-radius: 1.25rem;
+  background-color: vars.$color-white;
   font-family: var(--main-font);
 
   a {
-    color: rgb(21, 20, 20);
+    color: vars.$color-dark;
   }
 
   &:hover {
     opacity: 0.7;
   }
 }
-.header-color {
-  background-color: rgb(124, 137, 130);
-}
 
 .header-content {
   margin-top: 245px;
   // margin-top: 475px;
-  color: blue;
+  color: vars.$color-blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,9 +85,9 @@ body.home .menu li:last-child {
 
 .hero-title {
   text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 200;
-  color: #fff;
+  font-size: vars.$font-size-hero;
+  font-weight: vars.$font-extra-light;
+  color: vars.$color-white;
   letter-spacing: 5px;
   margin-top: 90px;
 }

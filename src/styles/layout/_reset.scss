@@ -1,4 +1,5 @@
 /* Reset  */
+@use '../variables' as vars;
 *,
 *::before,
 *::after {
@@ -14,5 +15,4 @@ ol {
 
 a {
   text-decoration: none;
-  color: inherit;
 }

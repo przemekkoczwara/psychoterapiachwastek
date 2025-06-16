@@ -1,60 +1,46 @@
 //  contact
-body.allsection li:last-child {
-  border-radius: 20px;
-  background-color: rgb(155 223 233);
-}
+@use '../variables' as vars;
 
 .contact-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: #f2f2f1;
   height: calc(100vh - 70px - 70px);
 }
 
 .contact-details {
-  text-align: left;
-  font-family: 'Lato', sans-serif;
-  font-weight: 200;
-  letter-spacing: 2px;
-
-  
-}
-.contact-details > .contact-text {
-  line-height: 10px;
+  font-family: vars.$font-text;
+  color: vars.$color-text;
 }
 
 .contact-title {
-  font-family: 'Poiret One', sans-serif;
-  font-weight: 300;
-  font-size: 26px;
+  font-family: vars.$font-main;
+  font-weight: vars.$font-light;
+  font-size: vars.$font-size-heading;
   text-align: center;
   margin-bottom: 30px;
-  letter-spacing: 1px;
-  margin-top: 100px;
+  letter-spacing: 2px;
+  margin-top: 80px;
   text-transform: uppercase;
+  color: black;
 }
-
-
 
 .contact-text {
   margin-bottom: 20px;
-  font-size: 16px;
-  color:gray;
-  font-weight: 300;
-  // letter-spacing: 0;
+  font-size: vars.$font-size-contact;
+  line-height: 1.5rem;
+  font-weight: vars.$font-thin;
 }
 
 .contact-text a {
   text-decoration: none;
-  color: rgb(15, 84, 127);
+  color: vars.$hover-color-menu;
 }
 .contact-text a:hover {
   text-decoration: none;
-  color: rgb(155, 161, 233);
+  color: vars.$hover-color-menu;
 }
 .location-map {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-

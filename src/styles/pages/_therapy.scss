@@ -1,0 +1,55 @@
+// therapy
+
+@use '../variables' as vars;
+
+.therapy {
+  height: calc(100vh - 70px - 100px - 70px);
+  font-family: vars.$font-text;
+  color: vars.$color-text;
+  font-weight: vars.$font-thin;
+  font-size: vars.$font-size-text;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.article-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 33%;
+  text-align: justify;
+}
+
+.article-title {
+  font-family: vars.$font-main;
+  font-size: vars.$font-size-heading;
+  text-transform: uppercase;
+  color: vars.$color-dark;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.article-text {
+  // margin-bottom: 30px;
+  padding: 0 30px;
+  line-height: 1.5rem;
+}
+blockquote {
+  height: 50px;
+  text-align: right;
+  position: relative;
+  color:vars.$color-dark;
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 5px solid vars.$color-btn-menu;
+}

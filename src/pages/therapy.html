@@ -5,97 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psychoterapia Chwastek</title>
     <link rel="stylesheet" href="./src/styles/main.scss" />
-    <!-- Czcionki -->
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap"
       rel="stylesheet"
     />
-
     <!-- Ikony Material Symbols -->
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- new section -->
+  <body class="allsection">
+    <!-- s:header-->
     <header>
-      <div class="header-content container">
-        <h1 class="logo-slogan">
+      <div class="header-hero container">
+        <h2 class="logo-slogan">
           <a class="logo-link" href="index.html">Aleksandra Chwastek</a>
           <span class="material-symbols-outlined icon-logo"> gesture </span>
-        </h1>
+        </h2>
         <nav>
           <ul class="menu">
             <li><a href="/src/pages/therapy.html">Proces terapii</a></li>
             <li><a href="/src/pages/about.html">O mnie</a></li>
             <li><a href="/src/pages/contact.html">Kontakt</a></li>
-            <li>
+            <li class="btn-bg-color">
               <a
                 href="https://www.znanylekarz.pl/aleksandra-chwastek/psycholog-psychoterapeuta/krakow"
                 target="_blank"
-                >Umów wizyte</a
+                rel="noopener noreferrer"
+                >Umów wizytę</a
               >
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <section id="therapy" class="therapy">
-      <div class="article">
-        <h2 class="article-title">Jak wyglada psychoterapia?</h2>
-        <p class="article-text">
-          Psychoterapia to forma rozmowy, w ktorej opowiadasz o sobie, o tym co
-          uwazasz za istotne i o tym co Cie porusza. Moja rola nie jest
-          doradzanie a raczej zauwazanie i dzielenie sie spostrzezeniami na
-          temat Twoich przezyc, powtarzajacych sie wzorow lub nieswiadomych,
-          sztywnych mechanizmow, ktore powoduja cierpienie. Taka wspolpraca ma
-          na celu nabranie wiekszej swiadomosci tego co przezywasz na codzien,
-          zastepowanie sztywnych mechanizmow takimi, ktore umozliwiaja
-          pelniejsze zycie. Decyzje o podjeciu psychoterapii poprzedza kilka
-          sesji konsultacyjnych, majacych na celu okreslenie problemu, bedziesz
-          miec okazje poznac sposob mojej pracy a ja okreslic czy moglabym pomoc
-          w danym problemie. Nastepnie nadamy ramy dalszej pracy.
-        </p>
+    <!-- e:header-->
+    <!-- s:therapy -->
+    <section id="therapy" class="therapy container">
+      <div class="article-group">
+        <div class="article">
+          <h2 class="article-title">Jak wygląda psychoterapia?</h2>
+          <p class="article-text">
+            Psychoterapia to forma rozmowy, w której opowiadasz o sobie, o tym,
+            co uważasz za istotne, i o tym, co Cię porusza. Moja rola to nie
+            doradzanie, lecz zauważanie i dzielenie się spostrzeżeniami na temat
+            Twoich przeżyć, powtarzających się wzorów lub nieświadomych,
+            sztywnych mechanizmów, które powodują cierpienie. Taka współpraca ma
+            na celu nabranie większej świadomości tego, co przeżywasz na co
+            dzień, zastępowanie sztywnych mechanizmów takimi, które umożliwiają
+            pełniejsze życie. Decyzję o podjęciu psychoterapii poprzedza kilka
+            sesji konsultacyjnych, mających na celu określenie problemu.
+            Będziesz mieć okazję poznać sposób mojej pracy, a ja określę, czy
+            mogłabym pomóc w danym problemie. Następnie nadamy ramy dalszej
+            pracy.
+          </p>
+        </div>
+        <div class="article">
+          <h2 class="article-title">Terapia psychodynamiczna, czyli jaka?</h2>
+          <p class="article-text">
+            Psychoterapia psychodynamiczna opiera się na założeniu, że wiele
+            naszych problemów ma swoje korzenie w nieświadomych konfliktach,
+            jakie w nas są, czyli w braku świadomości naszych emocji czy
+            zachowań. Jej celem jest zrozumienie, jak wcześniejsze doświadczenia
+            kształtują nasze relacje. Poprzez badanie myśli, uczuć, relacji,
+            wspomnień, staramy się zrozumieć wspólnie to, co utrudnia Ci
+            codzienne życie.
+          </p>
+        </div>
+        <div class="article">
+          <h2 class="article-title">Kiedy terapia jest skuteczna?</h2>
+          <p class="article-subtitle"></p>
+          <p class="article-text">
+            Aby zmienić wzorce, które powstawały przez lata, potrzeba stałej i
+            powtarzalnej pracy. Wymaga to regularnych spotkań – co tydzień, a
+            czasem nawet dwa razy w tygodniu – przez dłuższy czas. Trudno
+            jednoznacznie określić, ile trwa terapia – trwa tak długo, jak tego
+            potrzebujesz, w zależności od ustalonego celu. Może trwać rok lub
+            kilka lat.
+          </p>
+        </div>
       </div>
-      <div class="article">
-        <h2 class="article-title">Psychodynamiczna, czyli jaka?</h2>
-        <p class="article-text">
-          Psychoterapia psychodynamiczna opiera sie na zalozeniu, ze wiele
-          naszych problemow ma swoje korzenie w nieswiadomych konfliktach jakie
-          w nas sa czyli braku swiadomosci naszych emocji czy zachowan. Jej
-          celem jest zrozumienie, jak wczesniejsze doswiadczenia ksztaltuja
-          nasze relacje. Poprzez badanie mysli, uczuc, relacji, wspomnien,
-          staramy sie zrozumiec wspolnie to co utrudnia Ci codzienne zycie.
-        </p>
-      </div>
-      <div class="article">
-        <h2 class="article-title">Kiedy terapia jest skuteczna?</h2>
-        <p class="article-subtitle">
-          To regularne spotkania, zwykle raz lub dwa razy w tygodniu. Trwaja 50
-          minut.
-        </p>
-        <p class="article-text">
-          Aby zmienic wzorce, ktore powstawaly przez lata potrzeba stalek i
-          powtarzalnej pracy. Wymaga to regularnych spotkan, co tydzien lub
-          nawet dwa razy w tygodniu, przez dlugi czas. Trudno okreslic ile trwa
-          terapia, trwa tyle ile potrzeba.
-        </p>
-      </div>
+
+      <blockquote class="container">
+        „Nie musimy się wstydzić tego, jak się czujemy. Musimy zrozumieć,
+        dlaczego tak się czujemy, aby móc to zmienić.” <br /><br />
+        Bill Crawford
+      </blockquote>
     </section>
-    <footer>
+    <!-- e:therapy -->
+    <!-- s:footer -->
+    <footer class="no-border">
       <div class="footer-content container">
-        <small class="footer-text">
-          <span class="material-symbols-outlined" aria-hidden="true"
-            >copyright</span
-          >
-          <span>2025</span>
-          Psychoterapia Aleksandra Chwastek. Wszystkie prawa zastrzezone.
-          Created by SnailCode
+        <small class="footer-text" aria-label="Copyright 2025">
+          &copy; 2025 Psychoterapia Aleksandra Chwastek. Wszystkie prawa
+          zastrzeżone. Created by SuperP
         </small>
       </div>
     </footer>
+    <!-- e:footer -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

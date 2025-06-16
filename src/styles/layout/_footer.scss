@@ -1,20 +1,14 @@
-// footer
+@use '../variables' as vars;
 
 footer {
-  // background-color: #f2f2f1; 
-  background-color: #fff;
-  border-top: 2px solid rgb(208, 178, 178);
+  border-top: 2px solid vars.$color-footer-border; // rgb(208, 178, 178);
 }
 .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
-  font-family: "Lato", sans-serif; 
-  font-weight: 300;
+  font-family: vars.$font-logo-footer;  // "Lato", sans-serif; 
+  font-weight: vars.$font-light; // 300
   text-transform: uppercase;
-}
-
-.no-border {
-  border: none;
 }

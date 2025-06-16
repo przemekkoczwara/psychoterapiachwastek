@@ -1,15 +1,31 @@
-:root {
-  --main-font: 'Poiret One', sans-serif;
-  // --secondary-font: 'Italiana', sans-serif;
-  --main-color: whitesmoke;
+@use '../variables' as vars;
+
+html {
+  font-size: 16px;
 }
 
 body {
-  font-family: var(--main-font);
-  color: #2f2f2e;
+  // font-family: "Poiret One",sans-serif;
+  font-family: vars.$font-main;
+  background-color: vars.$color-white;
+  color: vars.$font-text;
   counter-reset: num;
 }
 
+body.allsection .logo-link {
+  color: vars.$color-dark;
+}
+body.allsection .icon-logo {
+  color: vars.$color-dark;
+}
+body.allsection .menu a {
+  color: vars.$color-dark;
+}
+
+body.allsection .menu li:last-child {
+  border-radius: 20px;
+  background-color: vars.$color-btn-menu;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -18,9 +34,10 @@ body {
 }
 
 .btn {
-  padding: 10px 20px;
-  border: 1px solid black;
-  border-radius: 40px;
+  // padding: 10px 20px;
+  padding: vars.$padding-standard;
+  // border: 1px solid black;
+  border-radius: 2.5rem;
 }
 
 .no-border-header {
@@ -28,5 +45,9 @@ body {
 }
 
 .btn-bg-color {
-  background-color: #99daeb;
+  background-color: vars.$color-btn-menu;
+}
+
+.no-border {
+  border: none;
 }
