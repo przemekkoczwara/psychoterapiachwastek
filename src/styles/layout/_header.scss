@@ -1,4 +1,5 @@
 @use '../variables' as vars;
+@use '../mixins' as *;
 
 body.home header {
   background-image: url('/src/assets/background.jpg');
@@ -7,6 +8,10 @@ body.home header {
   background-position: bottom;
   // color: vars.$color-dark;
   height: calc(100vh - 70px);
+
+  @include mobile {
+    height: calc(100vh - 50px);
+  }
 }
 body:not(.home) header {
   background-image: none;
@@ -21,6 +26,10 @@ body:not(.home) header {
   justify-content: space-between;
   align-items: center;
   // font-family: var(--secondary-font);
+
+  @include mobile {
+    padding: 10px 20px;
+  }
 }
 
 .logo-slogan {
@@ -28,6 +37,11 @@ body:not(.home) header {
   font-weight: vars.$font-extra-light;
   letter-spacing: 5px;
   font-family: vars.$font-logo-footer;
+
+  @include mobile {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
 }
 .logo-link {
   color: vars.$color-white;
@@ -38,12 +52,21 @@ body:not(.home) header {
   padding-left: 1.25rem;
   vertical-align: middle;
   color: vars.$color-white;
+
+  @include mobile {
+    font-size: 24px;
+    margin-left: 80px;
+  }
 }
 .menu {
   display: flex;
   font-size: vars.$font-size-text;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  @include mobile {
+    display: none;
+  }
 
   li {
     list-style-type: none;
@@ -81,6 +104,11 @@ body.home .menu li:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include mobile {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .hero-title {
@@ -90,4 +118,9 @@ body.home .menu li:last-child {
   color: vars.$color-white;
   letter-spacing: 5px;
   margin-top: 90px;
+
+  @include mobile {
+    font-size: 30px;
+    margin-top: 160px;
+  }
 }

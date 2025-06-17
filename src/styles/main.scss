@@ -1,4 +1,5 @@
-@use './variables' as *;         // teraz zmienne bez prefixu
+@use './variables' as *;
+@use './mixins' as *;
 @use './layout/reset';
 @use './layout/base';
 @use './layout/header';
