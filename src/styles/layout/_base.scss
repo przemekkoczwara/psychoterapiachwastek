@@ -6,27 +6,11 @@ html {
 }
 
 body {
-  // font-family: "Poiret One",sans-serif;
   font-family: vars.$font-main;
   background-color: vars.$color-white;
-  color: vars.$font-text;
+  color: vars.$color-text;
   counter-reset: num;
 }
-
-// body.allsection .logo-link {
-//   color: vars.$color-dark;
-// }
-// body.allsection .icon-logo {
-//   color: vars.$color-dark;
-// }
-// body.allsection .menu a {
-//   color: vars.$color-dark;
-// }
-
-// body.allsection .menu li:last-child {
-//   border-radius: 20px;
-//   background-color: vars.$color-btn-menu;
-// }
 
 body.allsection {
   .logo-link,
@@ -38,13 +22,21 @@ body.allsection {
   .menu li:last-child {
     border-radius: 20px;
     background-color: vars.$color-btn-menu;
+
+    a {
+      color: vars.$color-dark;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1;
+  padding: 0 1rem;
   width: 100%;
 
   @include mobile-small {
@@ -55,9 +47,7 @@ body.allsection {
 }
 
 .btn {
-  // padding: 10px 20px;
   padding: vars.$padding-standard;
-  // border: 1px solid black;
   border-radius: 2.5rem;
 }
 

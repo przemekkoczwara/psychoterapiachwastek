@@ -1,9 +1,9 @@
-@use './variables' as *;
-@use './mixins' as *;
-@use './layout/reset';
-@use './layout/base';
-@use './layout/header';
-@use './layout/footer';
-@use './pages/about';
-@use './pages/contact';
-@use './pages/therapy';
+    @use './variables' as vars;
+    @use './mixins' as *;
+    @use './layout/reset';
+    @use './layout/base';
+    @use './layout/header';
+    @use './layout/footer';
+    @use './pages/about';
+    @use './pages/contact';
+    @use './pages/therapy';

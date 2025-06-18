@@ -2,9 +2,8 @@
 @use '../variables' as vars;
 @use '../mixins' as *;
 .therapy {
-  height: calc(100vh - 70px - 100px - 70px);
+  height: calc(100vh - 70px - 50px - 70px);
   font-family: vars.$font-text;
-  color: vars.$color-text;
   font-weight: vars.$font-thin;
   font-size: vars.$font-size-text;
   display: flex;
@@ -24,7 +23,7 @@
 
   @include mobile-small {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 130px;
   }
 }
 
@@ -54,7 +53,7 @@
 }
 .article-text {
   // margin-bottom: 30px;
-  padding: 0 30px;
+  padding: 40px;
   line-height: 1.5rem;
   // font-size: 18px;
 
@@ -68,6 +67,7 @@ blockquote {
   text-align: right;
   position: relative;
   color: vars.$color-dark;
+  margin-bottom: 50px;
 
   @include mobile-small {
     position: relative;
@@ -84,10 +84,9 @@ blockquote {
 blockquote::before {
   content: '';
   position: absolute;
-  right: 0;
+  right: -10px;
   top: 0;
   bottom: 0;
-  width: 0;
   border-left: 5px solid vars.$color-btn-menu;
 
   @include mobile-small {

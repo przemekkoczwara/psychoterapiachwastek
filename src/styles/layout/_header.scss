@@ -10,13 +10,12 @@ body.home header {
   height: calc(100vh - 70px);
   position: relative;
 
-  body.home header {
-    @include mobile-small {
-      height: auto;
-      padding: 2rem 1rem;
-    }
+  @include mobile-small {
+    height: auto;
+    padding: 2rem 1rem;
   }
 }
+
 body:not(.home) header {
   background-image: none;
   height: 70px !important;
@@ -46,8 +45,8 @@ body:not(.home) header {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    font-size: 24px;
-    margin-top: 40px;
+    font-size: 1.5rem; // zamiana 24px na rem
+    margin-top: 2.5rem; // zamiana 40px na rem (1rem = 16px)
   }
 }
 
@@ -86,38 +85,37 @@ body:not(.home) header {
       }
     }
   }
+
   @include mobile-small {
-    display: none; // domyślnie ukryte na mobile
+    display: none;
     flex-direction: column;
     position: absolute;
-    top: 120px; // dostosuj do wysokości headera
-    right: 50px;
+    top: 7.5rem; // zamiana 120px na rem
+    right: 3.125rem; // zamiana 50px na rem
     width: fit-content;
     background-color: transparent;
     z-index: 10;
-    font-size: 10px;
-
-    
+    font-size: 1rem; // zamiana 10px na rem (czyli 16px)
   }
 }
 
 .menu.menu-active {
   @include mobile-small {
-    display: flex; // po kliknięciu pokazujemy menu jako kolumnę
+    display: flex;
   }
 }
 
 .icon-menu {
   display: none;
-  margin-top: 40px;
+  margin-top: 2.5rem; // 40px → rem
 
   @include mobile-small {
     display: inline;
     color: vars.$color-white;
     position: absolute;
-    top: 30px;
-    right: 50px;
-    font-size: 40px;
+    top: 1.875rem; // 30px → rem
+    right: 3.125rem; // 50px → rem
+    font-size: 2.5rem; // 40px → rem
   }
 }
 
@@ -128,20 +126,18 @@ body:not(.home) header {
 body.home .menu li:last-child {
   border-radius: 1.25rem;
   background-color: vars.$color-white;
-  font-family: var(--main-font);
 
   a {
     color: vars.$color-dark;
   }
 
   &:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 
 .header-content {
-  // margin-top: 20vh;
-  margin-top: 245px;
+  margin-top: 15.3rem; // 245px → rem
   color: vars.$color-blue;
   display: flex;
   flex-direction: column;
@@ -154,11 +150,10 @@ body.home .menu li:last-child {
   font-weight: vars.$font-extra-light;
   color: vars.$color-white;
   letter-spacing: 5px;
-  margin-top: 90px;
+  margin-top: 5.625rem; // 90px → rem
 
   @include mobile-small {
-    font-size: 36px;
-    margin-top: 90px;
-    // font-weight: 500;
+    font-size: 2.25rem; // 36px → rem
+    margin-top: 5.625rem; // 90px → rem
   }
 }

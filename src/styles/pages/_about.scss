@@ -11,10 +11,9 @@
 
   @include mobile-small {
     flex-direction: column-reverse;
-    height: auto; // <-- ważne na mobile, nie wymuszamy wysokości
-    margin-top: 50px;
+    height: auto; 
     padding: 0 20px;
-    margin-top: 200px;
+    margin-top: 230px;
   }
 }
 .about-details {
@@ -53,10 +52,10 @@
   font-weight: vars.$font-thin;
 
   @include mobile-small {
-    text-align: justify;
-    padding: 30px;
-    padding: 40px;
-    font-size: 18px;
+    padding: 40px 20px;
+    max-width: 500px;
+    // margin: 0 auto;
+    font-size: 1.125rem; //18px
   }
 }
 
@@ -67,8 +66,8 @@ img {
   box-shadow: 8px 12px 8px -7px rgba(66, 68, 90, 1);
 
   @include mobile-small {
-    max-width: 80%; // <-- pełna szerokość na mobile
-    height: auto; // <-- ważne! wysokość dostosowuje się proporcjonalnie
-    margin-bottom: 100px;
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 6.25rem;
   }
 }
