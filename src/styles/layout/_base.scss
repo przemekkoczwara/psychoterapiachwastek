@@ -13,37 +13,41 @@ body {
   counter-reset: num;
 }
 
-body.allsection .logo-link {
-  color: vars.$color-dark;
-}
-body.allsection .icon-logo {
-  color: vars.$color-dark;
-}
-body.allsection .menu a {
-  color: vars.$color-dark;
+// body.allsection .logo-link {
+//   color: vars.$color-dark;
+// }
+// body.allsection .icon-logo {
+//   color: vars.$color-dark;
+// }
+// body.allsection .menu a {
+//   color: vars.$color-dark;
+// }
+
+// body.allsection .menu li:last-child {
+//   border-radius: 20px;
+//   background-color: vars.$color-btn-menu;
+// }
+
+body.allsection {
+  .logo-link,
+  .icon-logo,
+  .menu a {
+    color: vars.$color-dark;
+  }
+
+  .menu li:last-child {
+    border-radius: 20px;
+    background-color: vars.$color-btn-menu;
+  }
 }
 
-body.allsection .menu li:last-child {
-  border-radius: 20px;
-  background-color: vars.$color-btn-menu;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1;
   width: 100%;
 
-  @include tablet {
-    max-width: 90%;
-    padding: 0 0.5rem;
-  }
-
   @include mobile-small {
-    max-width: 100%;
-    padding: 0;
-    margin: 0 auto;
-  }
-  @include mobile {
     max-width: 100%;
     padding: 0;
     margin: 0 auto;

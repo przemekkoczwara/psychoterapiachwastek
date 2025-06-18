@@ -1,7 +1,6 @@
 // therapy
-
 @use '../variables' as vars;
-
+@use '../mixins' as *;
 .therapy {
   height: calc(100vh - 70px - 100px - 70px);
   font-family: vars.$font-text;
@@ -11,17 +10,31 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+  color: vars.$color-dark;
+
+  @include mobile-small {
+    height: 100%;
+  }
 }
 
 .article-group {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @include mobile-small {
+    flex-direction: column;
+    margin-top: 100px;
+  }
 }
 
 .article {
   width: 33%;
   text-align: justify;
+
+  @include mobile-small {
+    width: 100%;
+  }
 }
 
 .article-title {
@@ -31,17 +44,41 @@
   color: vars.$color-dark;
   text-align: center;
   margin-bottom: 30px;
+  margin-left: 5px;
+
+  @include mobile-small {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 8px;
+  }
 }
 .article-text {
   // margin-bottom: 30px;
   padding: 0 30px;
   line-height: 1.5rem;
+  // font-size: 18px;
+
+  @include mobile-small {
+    padding: 40px;
+    font-size: 18px;
+  }
 }
 blockquote {
   height: 50px;
   text-align: right;
   position: relative;
-  color:vars.$color-dark;
+  color: vars.$color-dark;
+
+  @include mobile-small {
+    position: relative;
+    // font-size: 12px;
+    text-align: center;
+    top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
 }
 
 blockquote::before {
@@ -52,4 +89,8 @@ blockquote::before {
   bottom: 0;
   width: 0;
   border-left: 5px solid vars.$color-btn-menu;
+
+  @include mobile-small {
+    display: none;
+  }
 }
