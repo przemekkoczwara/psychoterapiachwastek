@@ -8,9 +8,13 @@ body.home header {
   background-position: bottom;
   // color: vars.$color-dark;
   height: calc(100vh - 70px);
+  position: relative;
 
-  @include mobile {
-    height: calc(100vh - 50px);
+  body.home header {
+    @include mobile-small {
+      height: auto;
+      padding: 2rem 1rem;
+    }
   }
 }
 body:not(.home) header {
@@ -20,15 +24,13 @@ body:not(.home) header {
 }
 
 .header-hero {
-  // height: 70px;
   padding-top: 1.875rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // font-family: var(--secondary-font);
 
-  @include mobile {
-    padding: 10px 20px;
+  @include mobile-small {
+    // justify-content: center;
   }
 }
 
@@ -38,11 +40,16 @@ body:not(.home) header {
   letter-spacing: 5px;
   font-family: vars.$font-logo-footer;
 
-  @include mobile {
-    font-size: 16px;
-    letter-spacing: 3px;
+  @include mobile-small {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
   }
 }
+
 .logo-link {
   color: vars.$color-white;
 }
@@ -53,20 +60,16 @@ body:not(.home) header {
   vertical-align: middle;
   color: vars.$color-white;
 
-  @include mobile {
-    font-size: 24px;
-    margin-left: 80px;
+  @include mobile-small {
+    display: none;
   }
 }
+
 .menu {
   display: flex;
   font-size: vars.$font-size-text;
   letter-spacing: 2px;
   text-transform: uppercase;
-
-  @include mobile {
-    display: none;
-  }
 
   li {
     list-style-type: none;
@@ -82,7 +85,38 @@ body:not(.home) header {
       }
     }
   }
+  @include mobile-small {
+    display: none; // domyślnie ukryte na mobile
+    flex-direction: column;
+    position: absolute;
+    top: 100px; // dostosuj do wysokości headera
+    right: 50px;
+    width: fit-content;
+    background-color: transparent;
+    z-index: 10;
+    font-size: 10px;
+  }
 }
+
+.menu.menu-active {
+  @include mobile-small {
+    display: flex; // po kliknięciu pokazujemy menu jako kolumnę
+  }
+}
+
+.icon-menu {
+  display: none;
+
+  @include mobile-small {
+    display: inline;
+    color: vars.$color-white;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 40px;
+  }
+}
+
 body.home .menu li:last-child {
   border-radius: 1.25rem;
   background-color: vars.$color-white;
@@ -98,17 +132,12 @@ body.home .menu li:last-child {
 }
 
 .header-content {
+  // margin-top: 20vh;
   margin-top: 245px;
-  // margin-top: 475px;
   color: vars.$color-blue;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @include mobile {
-    flex-direction: row;
-    justify-content: center;
-  }
 }
 
 .hero-title {
@@ -119,8 +148,8 @@ body.home .menu li:last-child {
   letter-spacing: 5px;
   margin-top: 90px;
 
-  @include mobile {
-    font-size: 30px;
-    margin-top: 160px;
+  @include mobile-small {
+    font-size: 38px;
+    margin-top: 110px;
   }
 }
