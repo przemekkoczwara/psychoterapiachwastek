@@ -1,6 +1,7 @@
 // therapy
 @use '../variables' as vars;
 @use '../mixins' as *;
+
 .therapy {
   height: calc(100vh - 70px - 50px - 70px);
   font-family: vars.$font-text;
@@ -14,6 +15,10 @@
   @include mobile-small {
     height: 100%;
   }
+
+  @include mobile {
+    height: 100%;
+  }
 }
 
 .article-group {
@@ -25,6 +30,11 @@
     flex-direction: column;
     margin-top: 130px;
   }
+
+  @include mobile{
+    flex-direction: column;
+    margin-top: 130px;
+  }
 }
 
 .article {
@@ -32,6 +42,10 @@
   text-align: justify;
 
   @include mobile-small {
+    width: 100%;
+  }
+
+  @include mobile {
     width: 100%;
   }
 }
@@ -50,6 +64,12 @@
     margin-bottom: 10px;
     padding: 0 8px;
   }
+
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 8px;
+  }
 }
 .article-text {
   // margin-bottom: 30px;
@@ -60,6 +80,13 @@
   @include mobile-small {
     padding: 40px;
     font-size: 18px;
+    text-align: left;
+  }
+
+  @include mobile {
+    padding: 40px;
+    font-size: 18px;
+    text-align: left;
   }
 }
 blockquote {
@@ -70,6 +97,17 @@ blockquote {
   margin-bottom: 50px;
 
   @include mobile-small {
+    position: relative;
+    // font-size: 12px;
+    text-align: center;
+    top: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  @include mobile {
     position: relative;
     // font-size: 12px;
     text-align: center;
@@ -90,6 +128,10 @@ blockquote::before {
   border-left: 5px solid vars.$color-btn-menu;
 
   @include mobile-small {
+    display: none;
+  }
+
+  @include mobile {
     display: none;
   }
 }

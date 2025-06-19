@@ -11,7 +11,14 @@
 
   @include mobile-small {
     flex-direction: column-reverse;
-    height: auto; 
+    height: auto;
+    padding: 0 20px;
+    margin-top: 230px;
+  }
+
+  @include mobile {
+    flex-direction: column-reverse;
+    height: auto;
     padding: 0 20px;
     margin-top: 230px;
   }
@@ -27,6 +34,12 @@
     height: auto; // <-- dajemy swobodę wysokości
     padding: 0;
   }
+
+  @include mobile {
+    width: 100%;
+    height: auto; // <-- dajemy swobodę wysokości
+    padding: 0;
+  }
 }
 
 .about-title {
@@ -37,6 +50,12 @@
   font-weight: vars.$font-thin;
 
   @include mobile-small {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 8px;
+  }
+
+  @include mobile {
     font-size: 24px;
     margin-bottom: 10px;
     padding: 0 8px;
@@ -56,6 +75,14 @@
     max-width: 500px;
     // margin: 0 auto;
     font-size: 1.125rem; //18px
+    text-align: left;
+  }
+  @include mobile {
+    padding: 40px 20px;
+    max-width: 500px;
+    // margin: 0 auto;
+    font-size: 1.125rem; //18px
+    text-align: left;
   }
 }
 
@@ -66,8 +93,14 @@ img {
   box-shadow: 8px 12px 8px -7px rgba(66, 68, 90, 1);
 
   @include mobile-small {
-    max-width: 80%; 
-    height: auto; 
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 6.25rem;
+  }
+
+  @include mobile {
+    max-width: 80%;
+    height: auto;
     margin-bottom: 6.25rem;
   }
 }

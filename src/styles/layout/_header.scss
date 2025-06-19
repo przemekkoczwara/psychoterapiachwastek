@@ -11,7 +11,10 @@ body.home header {
   position: relative;
 
   @include mobile-small {
-    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  @include mobile {
     padding: 2rem 1rem;
   }
 }
@@ -20,6 +23,14 @@ body:not(.home) header {
   background-image: none;
   height: 70px !important;
   // color: black;
+
+  @include mobile-small {
+    margin-top: 1.875rem; // dostosuj wartość, np. 5rem = 80px
+  }
+
+  @include mobile {
+    margin-top: 1.875rem; // dostosuj wartość, np. 5rem = 80px
+  }
 }
 
 .header-hero {
@@ -27,10 +38,6 @@ body:not(.home) header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @include mobile-small {
-    // justify-content: center;
-  }
 }
 
 .logo-slogan {
@@ -46,7 +53,15 @@ body:not(.home) header {
     text-align: center;
     align-items: center;
     font-size: 1.5rem; // zamiana 24px na rem
-    margin-top: 2.5rem; // zamiana 40px na rem (1rem = 16px)
+  }
+
+  @include mobile {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem; // zamiana 24px na rem
   }
 }
 
@@ -61,6 +76,10 @@ body:not(.home) header {
   color: vars.$color-white;
 
   @include mobile-small {
+    display: none;
+  }
+
+  @include mobile {
     display: none;
   }
 }
@@ -95,12 +114,28 @@ body:not(.home) header {
     width: fit-content;
     background-color: transparent;
     z-index: 10;
-    font-size: 1rem; // zamiana 10px na rem (czyli 16px)
+    font-size: 0.75rem; // zamiana 10px na rem (czyli 16px)
+  }
+
+  @include mobile {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 7.5rem; // zamiana 120px na rem
+    right: 3.125rem; // zamiana 50px na rem
+    width: fit-content;
+    background-color: transparent;
+    z-index: 10;
+    font-size: 0.75rem; // zamiana 10px na rem (czyli 16px)
   }
 }
 
 .menu.menu-active {
   @include mobile-small {
+    display: flex;
+  }
+
+  @include mobile {
     display: flex;
   }
 }
@@ -110,6 +145,15 @@ body:not(.home) header {
   margin-top: 2.5rem; // 40px → rem
 
   @include mobile-small {
+    display: inline;
+    color: vars.$color-white;
+    position: absolute;
+    top: 1.875rem; // 30px → rem
+    right: 3.125rem; // 50px → rem
+    font-size: 2.5rem; // 40px → rem
+  }
+
+  @include mobile {
     display: inline;
     color: vars.$color-white;
     position: absolute;
@@ -153,7 +197,12 @@ body.home .menu li:last-child {
   margin-top: 5.625rem; // 90px → rem
 
   @include mobile-small {
-    font-size: 2.25rem; // 36px → rem
+    font-size: 1.875rem; // 30px
+    margin-top: 5.625rem; // 90px → rem
+  }
+
+  @include mobile-small {
+    font-size: 2rem; // 30px
     margin-top: 5.625rem; // 90px → rem
   }
 }
